@@ -1,0 +1,41 @@
+/* FEATURED STYLES
+================================================== */
+.fp-featured {
+	background-color: $white;
+	padding: 70px 0 0;
+
+	img {
+		display: block;
+		float: left;
+		margin-top: 8px;
+	}
+
+	.fp-feature__content {
+		margin: 0 0 50px 78px;
+	}
+
+	.fp-featured__content-title {
+		margin: 0 0 15px;
+		line-height: 1;
+		font-size: 13px;
+		text-transform: uppercase;
+		font-weight: 700;
+
+		a {
+			color: $black;
+		}
+	}
+
+	.fp-featured__content-excerpt {
+		font-size: 13px;
+		color: #9f9e9e;
+	}
+
+	.button {
+		background-color: $orange;
+		color: $white;
+		text-transform: uppercase;
+		padding: 5px 10px;
+		margin-bottom: 0;
+	}
+}

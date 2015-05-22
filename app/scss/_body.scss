@@ -1,0 +1,140 @@
+/* BODY STYLES
+================================================== */
+.fp-portfolio {
+	background: linear-gradient(to bottom, #404040, #c7c7c7);
+	padding: 2.5rem 0 1.5625rem; //40px 0 25px
+}
+
+.site__slogan {
+	font-size: 4rem; //72px
+	font-weight: 300;
+	color: $white;
+	line-height: 1;
+	text-transform: uppercase;
+	margin: 0 0 2.8125rem;
+
+	.text-bold {
+		font-weight: 900;
+	}
+}
+
+
+.button.button--cta {
+	background-color: $orange;
+	color: $white;
+	// border-bottom: 5px solid rgba($orange, .5);
+	box-shadow: 0 5px 0 rgba($orange, .4);
+	width: 195px;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 0.875rem; //14px
+	padding: 5px 0 5px 20px;
+	margin: 40px 0 0;
+	transition: all 0.3s ease-in;
+
+	&:hover,
+	&:focus {
+		background-color: darken($orange, 10%);
+		transform: translateY(5px);
+		box-shadow: none;
+		text-shadow: 1px -1px darken($white, 20%);
+		color: $white;
+	}
+
+	.text-bold {
+		display: block;
+		font-weight: bold;
+		font-size: 1.5rem; //24px
+	}
+}
+
+.fp-showcase {
+	padding: 3.125rem 0 0; //50px
+	border-top: 3px solid #dddddd;
+	// perspective: 1800px;
+
+	.fp-showcase-wrap-item {
+		position: relative;
+		// overflow: hidden;
+		max-width: 250px;
+		height: 408px;
+		transition: transform .5s ease;
+ 		transform-style: preserve-3d;
+ 		margin-bottom: 30px;
+
+ 		&:hover {
+ 			transform: rotateY(180deg);
+ 		}
+
+		.side-a,
+		.side-b {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+  		backface-visibility: hidden;
+		}
+
+		.side-a {
+			z-index: 10;
+		}
+
+		.side-b {
+			background-color: $white;
+			padding: 25px 20px 15px;
+			transform: rotateY(-180deg);
+		}
+	}
+
+	.fp-showcase__item {
+		margin: 0 auto;
+		background-color: $white;
+		overflow: hidden;
+
+		img {
+			max-width: 100%;
+		}
+
+		> a {
+			display: block;
+			position: relative;
+
+			&:after {
+				font-family: FontAwesome;
+				content: '\f067';
+				width: 40px;
+				height: 40px;
+				background-color: $orange;
+				position: absolute;
+				right: 0;
+				bottom: -1px;
+				color: $white;
+				text-align: center;
+				line-height: 40px;
+			}
+		}
+
+		.fp-showcase__item-descr {
+			padding: 25px 20px 15px;
+
+			.fp-showcase__item-descr__title {
+				font-size: 0.8125rem; //13px
+				font-weight: 700;
+				text-transform: uppercase;
+				margin-bottom: 15px;
+				
+				a {
+					color: $black;
+				}
+			}
+
+			.fp-showcase__item-descr__cat {
+				font-size: 0.8125rem; //13px
+				margin-top: 15px;
+
+				a {
+					color: #9f9e9e;
+				}
+			}
+		}
+	}
+}

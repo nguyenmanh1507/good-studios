@@ -1,0 +1,50 @@
+/* JUMBOTRON STYLES
+================================================== */
+.jumbotron {
+	max-height: 780px;
+	background: #7c7b7b url(../images/intro.jpg) no-repeat left top;
+	background-size: cover;
+	background-blend-mode: multiply;
+	font-size: 1.25rem; //20px
+	padding: 7.25em 0 5em;
+
+	.intro {
+		text-align: center;
+		color: $white;
+
+		.intro__heading {
+			font-size: 12.5rem;
+			color: $white;
+			line-height: 0.9;
+			margin: 0;
+			text-transform: uppercase;
+			font-weight: 900;
+			margin-bottom: 2.5rem; //40px
+
+			.intro__heading--thin,
+			.intro__heading--thin-primary-color {
+				display: block;
+			}
+
+			.intro__heading--thin {
+				font-size: 3.75rem;
+				font-weight: 300;
+			}
+
+			.intro__heading--dot, 
+			.intro__heading--thin-primary-color {
+				color: $orange;
+			}
+
+			.intro__heading--thin-primary-color {
+				font-size: 6.875rem; //110px
+				font-weight: 300;
+			}
+		}
+
+		.intro__content {
+			width: 40%;
+			margin: 0 auto;
+		}
+	}
+}
