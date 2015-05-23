@@ -1,0 +1,17 @@
+// Top bar
+.top-bar-section ul li {
+	background-color: transparent;
+}
+
+@media only screen and (max-width: 40em) {
+
+	.top-bar .toggle-topbar.menu-icon {
+		background-color: $oil;
+	}
+
+	.top-bar-section ul li > a {
+		font-size: 1.25rem; //20px
+		text-align: center;
+	}
+
+}

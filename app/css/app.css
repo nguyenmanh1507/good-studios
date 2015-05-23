@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -366,8 +367,6 @@ html {
   box-sizing: border-box; }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
 html, body {
@@ -1248,7 +1247,8 @@ select {
   margin-bottom: 1.25rem;
   padding: 0.875rem 1.5rem 0.875rem 0.875rem;
   position: relative;
-  transition: opacity 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out;
+          transition: opacity 300ms ease-out;
   background-color: #008CBA;
   border-color: #0078a0;
   color: #FFFFFF; }
@@ -1637,7 +1637,8 @@ button, .button {
   background-color: #008CBA;
   border-color: #007095;
   color: #FFFFFF;
-  transition: background-color 300ms ease-out; }
+  -webkit-transition: background-color 300ms ease-out;
+          transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
     background-color: #007095; }
   button:hover, button:focus, .button:hover, .button:focus {
@@ -2197,9 +2198,7 @@ button::-moz-focus-inner {
     left: 50%;
     top: 50%;
     -webkit-transform: translateY(-50%) translateX(-50%);
-    -moz-transform: translateY(-50%) translateX(-50%);
     -ms-transform: translateY(-50%) translateX(-50%);
-    -o-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
     max-height: 100%;
     max-width: 100%; }
@@ -2748,13 +2747,8 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   margin: 0 0 1rem 0;
   padding: 0.5rem;
   width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: border-color 0.15s linear, background 0.15s linear;
-  -moz-transition: border-color 0.15s linear, background 0.15s linear;
-  -ms-transition: border-color 0.15s linear, background 0.15s linear;
-  -o-transition: border-color 0.15s linear, background 0.15s linear;
   transition: border-color 0.15s linear, background 0.15s linear; }
   input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus {
     background: #fafafa;
@@ -3430,13 +3424,11 @@ label.error {
 @keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg); }
 
   to {
     -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
@@ -3460,10 +3452,14 @@ label.error {
       display: inline-block; }
   .slideshow-wrapper .preloader {
     border-radius: 1000px;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-name: rotate;
-    animation-timing-function: linear;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: rotate;
+            animation-name: rotate;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
     border-color: #555555 #FFFFFF;
     border: solid 3px;
     display: block;
@@ -3486,9 +3482,7 @@ label.error {
     padding: 0;
     position: relative;
     -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
     transform: translateZ(0); }
     .orbit-container .orbit-slides-container img {
       display: block;
@@ -3660,7 +3654,8 @@ ul.pagination {
     margin-left: 0.3125rem; }
     ul.pagination li a, ul.pagination li button {
       border-radius: 3px;
-      transition: background-color 300ms ease-out;
+      -webkit-transition: background-color 300ms ease-out;
+              transition: background-color 300ms ease-out;
       background: none;
       color: #999999;
       display: block;
@@ -4192,7 +4187,8 @@ ul.pagination {
     text-indent: 100%;
     width: 4rem;
     height: 2rem;
-    transition: left 0.15s ease-out; }
+    -webkit-transition: left 0.15s ease-out;
+            transition: left 0.15s ease-out; }
   .switch input {
     left: 10px;
     opacity: 0;
@@ -4212,13 +4208,9 @@ ul.pagination {
     top: .25rem;
     width: 1.5rem;
     -webkit-transition: left 0.15s ease-out;
-    -moz-transition: left 0.15s ease-out;
-    -o-transition: translate3d(0, 0, 0);
     transition: left 0.15s ease-out;
     -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
   .switch input:checked + label {
     background: #008CBA; }
@@ -4398,7 +4390,8 @@ table {
   display: inline-block;
   line-height: 0;
   max-width: 100%;
-  transition: all 200ms ease-out; }
+  -webkit-transition: all 200ms ease-out;
+          transition: all 200ms ease-out; }
   .th:hover, .th:focus {
     box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5); }
   .th.radius {
@@ -4610,7 +4603,8 @@ meta.foundation-mq-topbar {
   left: 0;
   position: relative;
   width: auto;
-  transition: left 300ms ease-out; }
+  -webkit-transition: left 300ms ease-out;
+          transition: left 300ms ease-out; }
   .top-bar-section ul {
     display: block;
     font-size: 16px;
@@ -4848,7 +4842,8 @@ meta.foundation-mq-topbar {
     margin: 0 auto;
     max-width: 68rem; }
   .top-bar-section {
-    transition: none 0 0;
+    -webkit-transition: none 0 0;
+            transition: none 0 0;
     left: 0 !important; }
     .top-bar-section ul {
       display: inline;
@@ -5331,9 +5326,6 @@ blockquote, blockquote p {
   position: relative;
   width: 100%;
   -webkit-transition: -webkit-transform 500ms ease;
-  -moz-transition: -moz-transform 500ms ease;
-  -ms-transition: -ms-transform 500ms ease;
-  -o-transition: -o-transform 500ms ease;
   transition: transform 500ms ease; }
   .inner-wrap:before, .inner-wrap:after {
     content: " ";
@@ -5399,7 +5391,8 @@ blockquote, blockquote p {
   padding: 0;
   position: relative;
   text-indent: 2.1875rem;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   width: 2.8125rem; }
   .tab-bar .menu-icon span::after {
     content: "";
@@ -5425,14 +5418,13 @@ blockquote, blockquote p {
   overflow-y: auto;
   position: absolute;
   top: 0;
-  transition: transform 500ms ease 0s;
+  -webkit-transition: -webkit-transform 500ms ease 0s;
+          transition: transform 500ms ease 0s;
   width: 15.625rem;
   z-index: 1001;
   -webkit-transform: translate3d(-100%, 0, 0);
-  -moz-transform: translate3d(-100%, 0, 0);
   -ms-transform: translate(-100%, 0);
   -ms-transform: translate3d(-100%, 0, 0);
-  -o-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
   left: 0; }
   .left-off-canvas-menu * {
@@ -5449,14 +5441,13 @@ blockquote, blockquote p {
   overflow-y: auto;
   position: absolute;
   top: 0;
-  transition: transform 500ms ease 0s;
+  -webkit-transition: -webkit-transform 500ms ease 0s;
+          transition: transform 500ms ease 0s;
   width: 15.625rem;
   z-index: 1001;
   -webkit-transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
   -ms-transform: translate(100%, 0);
   -ms-transform: translate3d(100%, 0, 0);
-  -o-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
   right: 0; }
   .right-off-canvas-menu * {
@@ -5482,7 +5473,8 @@ ul.off-canvas-list {
     color: rgba(255, 255, 255, 0.7);
     display: block;
     padding: 0.6666666667rem;
-    transition: background 300ms ease; }
+    -webkit-transition: background 300ms ease;
+            transition: background 300ms ease; }
     ul.off-canvas-list li a:hover {
       background: #222222; }
     ul.off-canvas-list li a:active {
@@ -5490,16 +5482,15 @@ ul.off-canvas-list {
 
 .move-right > .inner-wrap {
   -webkit-transform: translate3d(15.625rem, 0, 0);
-  -moz-transform: translate3d(15.625rem, 0, 0);
   -ms-transform: translate(15.625rem, 0);
   -ms-transform: translate3d(15.625rem, 0, 0);
-  -o-transform: translate3d(15.625rem, 0, 0);
   transform: translate3d(15.625rem, 0, 0); }
 .move-right .exit-off-canvas {
   -webkit-backface-visibility: hidden;
   box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transition: background 300ms ease;
+  -webkit-transition: background 300ms ease;
+          transition: background 300ms ease;
   -webkit-tap-highlight-color: transparent;
   background: rgba(255, 255, 255, 0.2);
   bottom: 0;
@@ -5515,16 +5506,15 @@ ul.off-canvas-list {
 
 .move-left > .inner-wrap {
   -webkit-transform: translate3d(-15.625rem, 0, 0);
-  -moz-transform: translate3d(-15.625rem, 0, 0);
   -ms-transform: translate(-15.625rem, 0);
   -ms-transform: translate3d(-15.625rem, 0, 0);
-  -o-transform: translate3d(-15.625rem, 0, 0);
   transform: translate3d(-15.625rem, 0, 0); }
 .move-left .exit-off-canvas {
   -webkit-backface-visibility: hidden;
   box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transition: background 300ms ease;
+  -webkit-transition: background 300ms ease;
+          transition: background 300ms ease;
   -webkit-tap-highlight-color: transparent;
   background: rgba(255, 255, 255, 0.2);
   bottom: 0;
@@ -5541,15 +5531,14 @@ ul.off-canvas-list {
 .offcanvas-overlap .left-off-canvas-menu, .offcanvas-overlap .right-off-canvas-menu {
   -ms-transform: none;
   -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
   transform: none;
   z-index: 1003; }
 .offcanvas-overlap .exit-off-canvas {
   -webkit-backface-visibility: hidden;
   box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transition: background 300ms ease;
+  -webkit-transition: background 300ms ease;
+          transition: background 300ms ease;
   -webkit-tap-highlight-color: transparent;
   background: rgba(255, 255, 255, 0.2);
   bottom: 0;
@@ -5566,15 +5555,14 @@ ul.off-canvas-list {
 .offcanvas-overlap-left .right-off-canvas-menu {
   -ms-transform: none;
   -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
   transform: none;
   z-index: 1003; }
 .offcanvas-overlap-left .exit-off-canvas {
   -webkit-backface-visibility: hidden;
   box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transition: background 300ms ease;
+  -webkit-transition: background 300ms ease;
+          transition: background 300ms ease;
   -webkit-tap-highlight-color: transparent;
   background: rgba(255, 255, 255, 0.2);
   bottom: 0;
@@ -5591,15 +5579,14 @@ ul.off-canvas-list {
 .offcanvas-overlap-right .left-off-canvas-menu {
   -ms-transform: none;
   -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
   transform: none;
   z-index: 1003; }
 .offcanvas-overlap-right .exit-off-canvas {
   -webkit-backface-visibility: hidden;
   box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transition: background 300ms ease;
+  -webkit-transition: background 300ms ease;
+          transition: background 300ms ease;
   -webkit-tap-highlight-color: transparent;
   background: rgba(255, 255, 255, 0.2);
   bottom: 0;
@@ -5636,16 +5623,11 @@ ul.off-canvas-list {
   width: 15.625rem;
   z-index: 1002;
   -webkit-transform: translate3d(-100%, 0, 0);
-  -moz-transform: translate3d(-100%, 0, 0);
   -ms-transform: translate(-100%, 0);
   -ms-transform: translate3d(-100%, 0, 0);
-  -o-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
   left: 0;
   -webkit-transition: -webkit-transform 500ms ease;
-  -moz-transition: -moz-transform 500ms ease;
-  -ms-transition: -ms-transform 500ms ease;
-  -o-transition: -o-transform 500ms ease;
   transition: transform 500ms ease; }
   .left-submenu * {
     -webkit-backface-visibility: hidden; }
@@ -5668,10 +5650,8 @@ ul.off-canvas-list {
       display: inline; }
   .left-submenu.move-right, .left-submenu.offcanvas-overlap-right, .left-submenu.offcanvas-overlap {
     -webkit-transform: translate3d(0%, 0, 0);
-    -moz-transform: translate3d(0%, 0, 0);
     -ms-transform: translate(0%, 0);
     -ms-transform: translate3d(0%, 0, 0);
-    -o-transform: translate3d(0%, 0, 0);
     transform: translate3d(0%, 0, 0); }
 
 .right-submenu {
@@ -5688,16 +5668,11 @@ ul.off-canvas-list {
   width: 15.625rem;
   z-index: 1002;
   -webkit-transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
   -ms-transform: translate(100%, 0);
   -ms-transform: translate3d(100%, 0, 0);
-  -o-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
   right: 0;
   -webkit-transition: -webkit-transform 500ms ease;
-  -moz-transition: -moz-transform 500ms ease;
-  -ms-transition: -ms-transform 500ms ease;
-  -o-transition: -o-transform 500ms ease;
   transition: transform 500ms ease; }
   .right-submenu * {
     -webkit-backface-visibility: hidden; }
@@ -5720,10 +5695,8 @@ ul.off-canvas-list {
       display: inline; }
   .right-submenu.move-left, .right-submenu.offcanvas-overlap-left, .right-submenu.offcanvas-overlap {
     -webkit-transform: translate3d(0%, 0, 0);
-    -moz-transform: translate3d(0%, 0, 0);
     -ms-transform: translate(0%, 0);
     -ms-transform: translate3d(0%, 0, 0);
-    -o-transform: translate3d(0%, 0, 0);
     transform: translate3d(0%, 0, 0); }
 
 .left-off-canvas-menu ul.off-canvas-list li.has-submenu > a:after {
@@ -6144,39 +6117,55 @@ html, body {
 ================================================== */
 .jumbotron {
   max-height: 780px;
-  background: #7c7b7b url(../images/intro.jpg) no-repeat left top;
+  background: #7c7b7b url(../images/intro.jpg) no-repeat center top;
   background-size: cover;
   background-blend-mode: multiply;
   font-size: 1.25rem;
   padding: 7.25em 0 5em; }
+  @media only screen and (max-width: 64em) {
+    .jumbotron {
+      font-size: 1rem; } }
+  @media only screen and (max-width: 40em) {
+    .jumbotron {
+      font-size: 13px; } }
+  @media only screen and (max-width: 480px) {
+    .jumbotron {
+      font-size: 0.4375rem; } }
   .jumbotron .intro {
     text-align: center;
     color: #FFFFFF; }
     .jumbotron .intro .intro__heading {
-      font-size: 12.5rem;
+      font-size: 10em;
       color: #FFFFFF;
       line-height: 0.9;
       margin: 0;
       text-transform: uppercase;
       font-weight: 900;
-      margin-bottom: 2.5rem; }
+      margin-bottom: 0.2em; }
       .jumbotron .intro .intro__heading .intro__heading--thin, .jumbotron .intro .intro__heading .intro__heading--thin-primary-color {
         display: block; }
       .jumbotron .intro .intro__heading .intro__heading--thin {
-        font-size: 3.75rem;
+        font-size: 0.3em;
         font-weight: 300; }
       .jumbotron .intro .intro__heading .intro__heading--dot, .jumbotron .intro .intro__heading .intro__heading--thin-primary-color {
         color: #ffaa31; }
       .jumbotron .intro .intro__heading .intro__heading--thin-primary-color {
-        font-size: 6.875rem;
+        font-size: 0.55em;
         font-weight: 300; }
     .jumbotron .intro .intro__content {
       width: 40%;
       margin: 0 auto; }
+      @media only screen and (max-width: 64em) {
+        .jumbotron .intro .intro__content {
+          width: 80%; } }
+      @media only screen and (max-width: 480px) {
+        .jumbotron .intro .intro__content {
+          font-size: 0.8125rem; } }
 
 /* BODY STYLES
 ================================================== */
 .fp-portfolio {
+  background: -webkit-linear-gradient(top, #404040, #c7c7c7);
   background: linear-gradient(to bottom, #404040, #c7c7c7);
   padding: 2.5rem 0 1.5625rem; }
 
@@ -6187,8 +6176,23 @@ html, body {
   line-height: 1;
   text-transform: uppercase;
   margin: 0 0 2.8125rem; }
+  @media only screen and (max-width: 64em) {
+    .site__slogan {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 40em) {
+    .site__slogan {
+      text-align: center; } }
   .site__slogan .text-bold {
     font-weight: 900; }
+
+.button.button--fp-details {
+  width: 100%;
+  background-color: #ffaa31;
+  text-transform: uppercase;
+  display: block; }
+  .button.button--fp-details:hover i.fa {
+    -webkit-animation: gogo .5s linear infinite;
+            animation: gogo .5s linear infinite; }
 
 .button.button--cta {
   background-color: #ffaa31;
@@ -6200,10 +6204,21 @@ html, body {
   font-size: 0.875rem;
   padding: 5px 0 5px 20px;
   margin: 40px 0 0;
-  transition: all 0.3s ease-in; }
+  -webkit-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in; }
+  @media only screen and (max-width: 64em) {
+    .button.button--cta {
+      margin: 0; } }
+  @media only screen and (max-width: 40em) {
+    .button.button--cta {
+      display: block;
+      float: none !important;
+      margin: 0 auto 40px; } }
   .button.button--cta:hover, .button.button--cta:focus {
     background-color: #fd9500;
-    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+            transform: translateY(5px);
     box-shadow: none;
     text-shadow: 1px -1px #cccccc;
     color: #FFFFFF; }
@@ -6219,22 +6234,27 @@ html, body {
     position: relative;
     max-width: 250px;
     height: 408px;
-    transition: transform .5s ease;
-    transform-style: preserve-3d;
-    margin-bottom: 30px; }
+    -webkit-transition: -webkit-transform .5s ease;
+            transition: transform .5s ease;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    margin: 0 auto 30px; }
     .fp-showcase .fp-showcase-wrap-item:hover {
-      transform: rotateY(180deg); }
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg); }
     .fp-showcase .fp-showcase-wrap-item .side-a, .fp-showcase .fp-showcase-wrap-item .side-b {
       width: 100%;
       height: 100%;
       position: absolute;
-      backface-visibility: hidden; }
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden; }
     .fp-showcase .fp-showcase-wrap-item .side-a {
       z-index: 10; }
     .fp-showcase .fp-showcase-wrap-item .side-b {
       background-color: #FFFFFF;
       padding: 25px 20px 15px;
-      transform: rotateY(-180deg); }
+      -webkit-transform: rotateY(-180deg);
+              transform: rotateY(-180deg); }
   .fp-showcase .fp-showcase__item {
     margin: 0 auto;
     background-color: #FFFFFF;
@@ -6270,6 +6290,24 @@ html, body {
         margin-top: 15px; }
         .fp-showcase .fp-showcase__item .fp-showcase__item-descr .fp-showcase__item-descr__cat a {
           color: #9f9e9e; }
+
+@-webkit-keyframes gogo {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+
+  100% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px); } }
+
+@keyframes gogo {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+
+  100% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px); } }
 
 /* FEATURED STYLES
 ================================================== */
@@ -6308,7 +6346,8 @@ html, body {
   #site-footer .copyrights-info {
     color: #FFFFFF;
     font-size: 13px;
-    margin: 11px 0 0 0; }
+    margin: 11px 0 0 0;
+    text-align: center; }
     #site-footer .copyrights-info a {
       color: #FFFFFF;
       font-weight: 700; }
@@ -6327,6 +6366,25 @@ html, body {
         line-height: 31px;
         color: #FFFFFF;
         border: 1px solid #FFFFFF;
-        transition: background-color 0.3s ease-in; }
+        -webkit-transition: background-color 0.3s ease-in;
+                transition: background-color 0.3s ease-in; }
         #site-footer .inline-list li a:hover {
           background-color: #ffaa31; }
+
+@media only screen and (max-width: 64rem) {
+  #site-footer .copyrights-info {
+    margin: 0.9375rem 0 0.9375rem; }
+  #site-footer .copyrights-info, #site-footer .inline-list {
+    text-align: left; }
+  #site-footer .inline-list li {
+    margin-right: 0.9375rem; } }
+
+.top-bar-section ul li {
+  background-color: transparent; }
+
+@media only screen and (max-width: 40em) {
+  .top-bar .toggle-topbar.menu-icon {
+    background-color: #303030; }
+  .top-bar-section ul li > a {
+    font-size: 1.25rem;
+    text-align: center; } }

@@ -13,11 +13,29 @@
 	text-transform: uppercase;
 	margin: 0 0 2.8125rem;
 
+	@media only screen and (max-width: 64em) {
+		font-size: 3rem;
+	}
+
+	@media only screen and (max-width: 40em) {
+		text-align: center;
+	}
+
 	.text-bold {
 		font-weight: 900;
 	}
 }
 
+.button.button--fp-details {
+	width: 100%;
+	background-color: $orange;
+	text-transform: uppercase;
+	display: block;
+
+	&:hover i.fa {
+		animation: gogo .5s linear infinite;
+	}
+}
 
 .button.button--cta {
 	background-color: $orange;
@@ -31,6 +49,16 @@
 	padding: 5px 0 5px 20px;
 	margin: 40px 0 0;
 	transition: all 0.3s ease-in;
+
+	@media only screen and (max-width: 64em) {
+		margin: 0;
+	}
+
+	@media only screen and (max-width: 40em) {
+		display: block;
+		float: none !important;
+		margin: 0 auto 40px;
+	}
 
 	&:hover,
 	&:focus {
@@ -60,7 +88,7 @@
 		height: 408px;
 		transition: transform .5s ease;
  		transform-style: preserve-3d;
- 		margin-bottom: 30px;
+ 		margin: 0 auto 30px;
 
  		&:hover {
  			transform: rotateY(180deg);
@@ -137,4 +165,17 @@
 			}
 		}
 	}
+}
+
+
+// Keyframes
+@keyframes gogo {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(10px);
+	}
+
 }

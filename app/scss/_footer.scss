@@ -8,6 +8,7 @@
 		color: $white;
 		font-size: 13px;
 		margin: 11px 0 0 0;
+		text-align: center;
 
 		a {
 			color: $white;
@@ -40,4 +41,20 @@
 			}
 		}
 	}
+}
+
+@media only screen and (max-width: 64rem) {
+	#site-footer .copyrights-info {
+		margin: 0.9375rem 0 0.9375rem;
+	}
+
+	#site-footer .copyrights-info,
+	#site-footer .inline-list {
+		text-align: left;
+	}
+
+	#site-footer .inline-list li {
+		margin-right: 0.9375rem;
+	}
+
 }
